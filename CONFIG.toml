@@ -1,0 +1,27 @@
+theme = "split-gallery"
+title = "Ruevko's Journal"
+
+[[menu.main]]
+  name = "Source code"
+  url = "https://github.com/ruevko/journal"
+[[menu.main]]
+  name = "All regions"
+  url = "/regions"
+[[menu.main]]
+  name = "About"
+  url = "/about"
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[params]
+  customCss = ["hugo-split-gallery/cols.css"]
+  customJs = ["hugo-split-gallery/maps.js"]
+  author = "Roger Rafael Castro Zambrano"
+  favicon = "crow-solid.svg"
+  largeImageSize = "x900"
+  includeOriginalImage = false
+
+[taxonomies]
+  region = "regions"
