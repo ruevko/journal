@@ -1,0 +1,48 @@
+body {
+  color: #e6e8f2;
+  background-color: #101535;
+}
+
+a, button.btn {
+  color: #ced9ad;
+  transition-duration: 0.5s;
+  text-decoration: underline dotted #ced9ad 1px;
+}
+
+a:hover, button.btn:hover {
+  color: #9bbf30;
+  transition-duration: 0.1s;
+  text-decoration: underline dotted #9bbf30 1px;
+}
+
+.c4-izmir {
+  --primary-color: #9bbf30;
+}
+
+.fancybox-progress {
+  background: #9bbf30;
+}
+
+.fancybox-thumbs__list a::before {
+  border: 3px solid #9bbf30;
+}
+
+.leaflet-popup-content a {
+  text-decoration: none;
+}
+
+.leaflet-popup-close-button {
+  display: none;
+}
+
+.leaflet-marker-icon {
+  opacity: 0.5;
+}
+
+.leaflet-marker-icon:hover {
+  opacity: 1.0;
+}
+
+ul {
+  list-style-type: none;
+}
