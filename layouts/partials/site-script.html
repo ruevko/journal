@@ -1,0 +1,7 @@
+{{ range slice "jquery/*.js" "bootstrap/*.js" "fancybox/*.js" "leaflet/*.js" "togeojson/*.js" }}
+{{ with resources.GetMatch (printf "/vendor/%s" .) }}<script type="text/javascript" src="{{ .Permalink }}"></script>{{ end }}
+{{ end }}
+
+{{ range .Site.Params.customJs }}
+<script src="{{ absURL (.) }}"></script>
+{{ end }}
