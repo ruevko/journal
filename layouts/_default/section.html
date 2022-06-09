@@ -1,8 +1,18 @@
 {{ define "gallery" }}
-{{ partial "grid.html" . }}
+  {{ $featured_image := false }}
+  {{ with index (where .Site.RegularPages "Section" .Section) 0 }}
+    {{ $featured_image = partial "featureimage/plain.html" . }}
+  {{ end }}
+  {{ if $featured_image }}
+    <div class="col-lg-6 p-0" id="gallery-panel" style="background-image: url('{{ $featured_image }}');">
+  {{ else }}
+    <div class="col-lg-6 p-0" id="gallery-panel">
+  {{ end }}
+  <div class="container-fluid h-100 p-0"></div>
+</div>
 {{ end }}
 
 {{ define "main_content" }}
-{{ partial "map/list.html" . }}
+{{ .Content }}
 {{ partial "list.html" . }}
 {{ end }}
