@@ -1,5 +1,6 @@
 theme = "split-gallery"
 title = "Ruevko's Journal"
+baseURL = "https://ruevko.netlify.app"
 
 [[menu.main]]
   name = "Source code"
@@ -19,6 +20,7 @@ title = "Ruevko's Journal"
   customCss = ["hugo-split-gallery/cols.css"]
   customJs = ["hugo-split-gallery/maps.js"]
   author = "Roger Rafael Castro Zambrano"
+  description = "some places Rafael Castro has traveled to"
   favicon = "crow-solid.svg"
   largeImageSize = "x900"
   includeOriginalImage = false
