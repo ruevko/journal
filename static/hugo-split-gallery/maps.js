@@ -39,7 +39,7 @@ function addGPX(track, color) {
       if (start === null) {
         start = latlngs[0];
         x = L.marker(start, {
-          icon: L.icon({ iconUrl: '/journal/crow-solid.svg', iconSize: [25, 20], iconAnchor: [15, 20] }),
+          icon: L.icon({ iconUrl: '/crow-solid.svg', iconSize: [25, 20], iconAnchor: [15, 20] }),
         }).addTo(featuregroup);
       }
       end = latlngs[latlngs.length - 1];
@@ -58,7 +58,7 @@ function addGPX(track, color) {
 
 function addMarker(latlng, idx) {
   var marker = L.marker(latlng, {
-    icon: L.icon({ iconUrl: '/journal/camera-solid.svg', iconSize: [15, 15] })
+    icon: L.icon({ iconUrl: '/camera-solid.svg', iconSize: [15, 15] })
   }).on('click', function () {
     $('.split-grid a').eq(idx).trigger('click');
   }).addTo(map);
@@ -88,7 +88,6 @@ function add(gpxs, markers, index) {
   $.each(gpxs, function (i, gpx) {
     var featuregroup = addGPX(gpx[0], colors[nextColor()]);
     if (featuregroup) {
-      //featuregroup.invoke('setOpacity', 0.5);
       var featuregroupbounds = featuregroup.getBounds().pad(0.5);
       featuregroup.bindPopup(gpx[1]);
       b = (b === null) ? featuregroupbounds : b.extend(featuregroupbounds);
