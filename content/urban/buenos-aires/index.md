@@ -1,7 +1,7 @@
 ---
 date: 2016-08-26
 title: "Buenos Aires"
-images: [images/20160826-4.jpg]
+images: [images/20160826-3.jpg]
 regions: "Buenos Aires"
 ---
 
